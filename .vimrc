@@ -56,8 +56,6 @@ set showmatch
 set mat=2
 " search as characters are entered
 set incsearch
-" highlight matches
-set hlsearch
 " ingnore case while searching
 set ignorecase
 " When searching try to be smart about cases 
@@ -77,10 +75,6 @@ set autoread"
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
-" In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse=a
-endif
 " For regular expressions turn magic on
 set magic
 " Set utf8 as standard encoding and en_US as the standard language
@@ -115,14 +109,3 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 set nowb
 set noswapfile
-
-" Syntastic plugin
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-" End syntastic
