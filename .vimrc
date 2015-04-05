@@ -9,7 +9,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'sjl/gundo.vim'
-Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-markdown'
